@@ -89,6 +89,17 @@ button:hover {
     text-align: center;
 }
 
+.below {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.below a {
+    text-decoration: none;
+    color: white;
+}
 
 /* .values .cloudy p {
     font-size: 35px;
