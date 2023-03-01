@@ -1,0 +1,96 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+} */
+
+.body-section {
+    background: url('./images/weatherbg.jpg');
+    object-fit: cover;
+    object-position: center;
+    background-position: center;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .section1 {
+    margin-left: 7%;
+} */
+
+.body-section section input {
+    width: 40%;
+    height: 60%;
+    margin-left: 3%;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+}
+
+.body-section section button {
+    background-color: blueviolet;
+    padding: 8px 20px;
+    color: white;
+    border-radius: 8px;
+    border: blueviolet;
+    margin-top: 3%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blueviolet;
+    opacity: 0.7;
+    transition: all 500ms ease-in-out;
+}
+
+.values div a {
+    text-decoration: none;
+}
+
+.body-section section .container-flex .flex {
+    color: white;
+    margin-left: 4%;
+}
+
+.body-section section .container-flex .city {
+    margin-right: 4%;
+    color: white;
+}
+
+.values .cloudy {
+    margin-left: 5%;
+}
+
+.values .cloudy h3 {
+    font-size: 30px;
+    margin-right: 10%;
+}
+
+.row .card {
+    background-color: #430f58;
+    color: white;
+    margin-left: 3%;
+    text-align: center;
+}
+
+
+/* .values .cloudy p {
+    font-size: 35px;
+    font-weight: bold;
+} */
