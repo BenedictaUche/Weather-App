@@ -15,32 +15,36 @@
 <body>
     <div class="body-section border">
         <section>
-            <input type="text" placeholder="Search" id="search-input" class="" />
-            <button id="search-btn">Search</button>
-            <button id="current-btn">Current</button>
+            <div id="search-form">
+                <input type="text" placeholder="Enter city......" id="search-input" class="" />
+                <button id="search-btn">Search</button>
+                <button id="current-btn">Current</button>
+            </div>
             <div class="container-flex mt-4">
                 <div class="flex degrees">
                     <div>
-                        <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="partly_cloudy" />
+                        <img src="" alt="clear" id="icon" />
                     </div>
                     <div class="values flex-col">
                         <div class="cloudy">
-                            <p id="temperature" style="font-size: 40px;">
-                                21<a href="#" id="celsius-link">°C</a>
-                                <small style="font-size: 20px;">69<a href="#" id="fahrenheit-link">°F</a></small>
-                            </p>
-                            <h3>Cloudy</h3>
+                            <div style="font-size: 40px;">
+                                <strong id="temperature"></strong><span class="units"> <a href="#"
+                                        id="celsius-link">°C</a> | <a href="#" id="fahrenheit-link">°F</a></span>
+                            </div>
+                            <h3 id='description'></h3>
                         </div>
                         <div>
                             <p>
-                                Humidity: 5% <br />
-                                Wind: 7 km/h
+                                Humidity: <span id="humidity"></span>%
+                            </p>
+                            <p>
+                                Wind: <span id="wind"></span>km/h
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="city">
-                    <h2 class="display-text">Lagos, Nigeria</h2>
+                    <h2 id="city" class="display-text">Lagos, Nigeria</h2>
                     <p class="date"></p>
                 </div>
             </div>
@@ -90,7 +94,8 @@
                     </div>
                 </div>
             </div>
-            <small class="below"><a href="https://github.com/BenedictaUche/Weather-App">Github</a></small>
+            <small class="below"><a href="https://github.com/BenedictaUche/Weather-App"
+                    target='_blank'>Github</a></small>
         </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

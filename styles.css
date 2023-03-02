@@ -80,6 +80,7 @@ button:hover {
 .values .cloudy h3 {
     font-size: 30px;
     margin-right: 10%;
+    text-transform: capitalize;
 }
 
 .row .card {
