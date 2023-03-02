@@ -107,6 +107,9 @@ button:hover {
     cursor: default;
 }
 
+.weather-forecast-temperature-min {
+    color: gray;
+}
 
 /* .values .cloudy p {
     font-size: 35px;
