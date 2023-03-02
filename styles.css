@@ -102,6 +102,12 @@ button:hover {
     color: white;
 }
 
+.units .active {
+    color: rgb(33, 33, 33);
+    cursor: default;
+}
+
+
 /* .values .cloudy p {
     font-size: 35px;
     font-weight: bold;
