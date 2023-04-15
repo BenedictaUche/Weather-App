@@ -37,18 +37,19 @@ function displayForecast(response) {
     let forecastElement = document.querySelector("#forecast");
 
 
-    let forecastHTML = `<div class="row">`;
+    let forecastHTML = `<div class="row flex-wrap">`;
     forecast.forEach(function (forecastDay, index) {
         if (index < 7) {
             forecastHTML =
                 forecastHTML +
                 `
-      <div class="col-2 card">
+      <div class="col-3 card p-2 ">
         <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
         <img
           src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
           alt=""
           width="42"
+          class='weathericon'
         />
         <div class="weather-forecast-temperatures">
           <span class="weather-forecast-temperature-max"> ${Math.round(forecastDay.temp.max)}° </span>

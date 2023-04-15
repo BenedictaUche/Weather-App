@@ -1,18 +1,19 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+/* body {
     background-color: black;
 } */
-
 .body-section {
     background: url('./images/weatherbg.jpg');
     object-fit: cover;
     object-position: center;
     background-position: center;
+    height: 100dvh;
+    width: 100%;
 }
 
 .container-flex {
@@ -30,9 +31,9 @@ body {
     flex-direction: column;
 }
 
-/* .section1 {
-    margin-left: 7%;
-} */
+.section1 {
+    margin: 0 3% 0 3%;
+}
 
 .body-section section input {
     width: 40%;
@@ -83,22 +84,33 @@ button:hover {
     text-transform: capitalize;
 }
 
+
+
 .row .card {
     background-color: #430f58;
     color: white;
     margin-left: 3%;
     text-align: center;
+    margin-top: 2%;
 }
 
 .below {
     text-align: center;
     display: block;
     margin: 0 auto;
+    font-size: 20px;
+    font-style: italic;
+}
 
+.belowtxt {
+    position: fixed;
+    bottom: 0;
+    left: 5%;
+    right: 0;
 }
 
 .below a {
-    text-decoration: none;
+    text-decoration: underline;
     color: white;
 }
 
@@ -106,6 +118,8 @@ button:hover {
     color: rgb(33, 33, 33);
     cursor: default;
 }
+
+
 
 .weather-forecast-temperature-min {
     color: gray;
@@ -115,3 +129,48 @@ button:hover {
     font-size: 35px;
     font-weight: bold;
 } */
+
+@media(max-width: 768px) {
+    .belowtxt {
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+        right: 0;
+    }
+
+    .section1 {
+        margin: 10rem 3% 0 10%;
+    }
+
+    .weathericon {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 540px) {
+    .body-section {
+        height: 100dvh;
+        width: 100%;
+    }
+
+    .section1 {
+        margin: 2rem 3% 0 10%;
+    }
+}
+
+@media(max-width: 400px) {
+    .section1 {
+        margin: 1rem 3% 0 10%;
+    }
+}
+
+@media(max-width: 300px) {
+    .humid-inline {
+        display: inline-flex;
+    }
+
+    .humid-inline .wind {
+        margin-left: 2rem;
+    }
+}
